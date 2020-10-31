@@ -22,6 +22,7 @@
     "build": "tsc",
     "dev": "nodemon",
     "lint": "eslint --fix .",
+    "lint-staged": "lint-staged",
     "format": "beautify-proj -i . -o ../ -c .jsbeautifyrc -e ./node_modules",
     "start": "tsc && cross-env NODE_ENV=production node dist/src/index.js",
     "test": "eslint ."
@@ -42,7 +43,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "npm run lint-staged"
     }
   },
   "lint-staged": {
