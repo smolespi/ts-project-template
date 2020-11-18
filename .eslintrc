@@ -70,10 +70,12 @@
       // },
 
       "rules": {
+        "semi": "off",
         "@typescript-eslint/no-unused-vars": "error",
         "@typescript-eslint/member-delimiter-style": "error",
         "@typescript-eslint/member-ordering": "error",
-        "@typescript-eslint/type-annotation-spacing": "error"
+        "@typescript-eslint/type-annotation-spacing": "error",
+        "@typescript-eslint/semi": [1, "always"]
       }
     }
   ]
