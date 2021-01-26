@@ -1,1 +1,1 @@
-/** Application starts here */
+/** Hello, world! */

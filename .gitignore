@@ -1,20 +1,5 @@
 # Configs
-cfg.js
-cfg.json
-config.js
 config.json
-
-# Binaries
-ffmpeg
-ffmpeg.exe
-ffplay
-ffplay.exe
-ffprobe
-ffprobe.exe
-rethinkdb
-rethinkdb.exe
-Lavalink
-Lavalink.jar
 
 # Modules
 .sass-cache
@@ -22,7 +7,6 @@ dist/
 docs/
 node_modules/
 out/
-rethinkdb_data/
 
 # Logs & lockfiles
 .npm
