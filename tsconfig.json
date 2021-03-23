@@ -4,14 +4,16 @@
     "allowSyntheticDefaultImports": true,
     "alwaysStrict": true,
     "baseUrl": "./src",
-    "checkJs": false,
-    "declaration": false,
+    "checkJs": true,
+    "declaration": true,
     "emitDecoratorMetadata": true,
     "esModuleInterop": true,
     "experimentalDecorators": true,
     "importsNotUsedAsValues": "error",
     "incremental": true,
-    "lib": ["es2020"],
+    "inlineSources": true,
+    "jsx": "preserve",
+    "lib": ["es2020", "DOM"],
     "module": "commonjs",
     "moduleResolution": "node",
     "noEmit": false,
@@ -26,7 +28,8 @@
     "removeComments": true,
     "resolveJsonModule": true,
     "skipLibCheck": true,
-    "sourceMap": false,
+    "sourceMap": true,
+    "sourceRoot": "/",
     "strict": true,
     "strictBindCallApply": true,
     "strictNullChecks": false,
@@ -34,6 +37,6 @@
     "target": "es2020",
     "typeRoots": ["./src/typings"]
   },
-  "exclude": ["node_modules"],
-  "include": ["src/**/*", "src/**/*.json", "src/**/*.ejs"]
+  "include": ["src/**/*", "src/**/*.json"],
+  "exclude": ["node_modules"]
 }

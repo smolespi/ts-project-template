@@ -1,23 +1,30 @@
 # Configs
 config.json
 
+# Binaries
+*.exe
+*.jar
+rethinkdb
+
 # Modules
-.sass-cache
+.sass-cache/
+.jekyll-cache/
 dist/
 docs/
 node_modules/
 out/
+rethinkdb_data/
+.tsbuildinfo
+.map
 
 # Logs & lockfiles
 .npm
-logs/*
+*.log
+*-audit.json
 npm
-npm-debug.log
-npm-error.log
 report.*
-yarn-debug.log
-yarn-error.log
 yarn.lock*
+logs/
 
 # Windows
 *.stackdump
