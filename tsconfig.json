@@ -12,10 +12,9 @@
     "importsNotUsedAsValues": "error",
     "incremental": true,
     "inlineSources": true,
-    "jsx": "preserve",
-    "lib": ["es2020", "DOM"],
-    "module": "commonjs",
-    "moduleResolution": "node",
+    "lib": ["ES2020"],
+    "module": "CommonJS",
+    "moduleResolution": "Node",
     "noEmit": false,
     "noEmitOnError": true,
     "noImplicitAny": true,
@@ -32,11 +31,12 @@
     "sourceRoot": "/",
     "strict": true,
     "strictBindCallApply": true,
-    "strictNullChecks": false,
+    "strictFunctionTypes": true,
+    "strictNullChecks": true,
+    "strictPropertyInitialization": true,
     "suppressImplicitAnyIndexErrors": true,
-    "target": "es2020",
-    "typeRoots": ["./src/typings"]
+    "target": "ES2020"
   },
-  "include": ["src/**/*", "src/**/*.json"],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules"],
+  "include": ["./src/**/*", "./src/**/*.json"]
 }

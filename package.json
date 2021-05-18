@@ -19,12 +19,18 @@
     "npm": ">=6.9.0",
     "node": ">=14.0.0"
   },
+  "eslintIgnore": [
+    "dist",
+    "node_modules"
+  ],
+  "eslintConfig": {
+    "extends": "@sysdotini/eslint-config"
+  },
   "scripts": {
     "build": "tsc",
-    "dev": "npm run nodemon",
-    "format": "cross-env prettier --config .prettierrc 'src/**/*.{css,ejs,liquid,js,json,sass,scss,ts,tsx}' --write",
+    "dev": "cross-env concurrently \"cross-env nodemon\"",
+    "format": "cross-env prettier --config .prettierrc 'src/**/*.{css,liquid,js,json,sass,scss,ts,tsx}' --write",
     "lint": "eslint --fix .",
-    "nodemon": "cross-env nodemon --ext 'ts' --watch 'src' --delay 5 --exec 'cross-env NODE_ENV=development ts-node --files ./src/index.ts'",
     "prebuild": "cross-env rimraf ./dist/",
     "prepublishOnly": "npm run test && npm run build",
     "start": "npm run build && cross-env NODE_ENV=production node dist/index.js",
@@ -32,17 +38,19 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "@types/node": "^14.14.35",
-    "@typescript-eslint/eslint-plugin": "^4.19.0",
-    "@typescript-eslint/parser": "^4.19.0",
+    "@sysdotini/eslint-config": "^1.0.2",
+    "@types/node": "^15.3.0",
+    "@typescript-eslint/eslint-plugin": "^4.24.0",
+    "@typescript-eslint/parser": "^4.24.0",
+    "concurrently": "^6.1.0",
     "cross-env": "^7.0.3",
-    "eslint": "^7.22.0",
-    "eslint-config-prettier": "^8.1.0",
-    "eslint-plugin-prettier": "^3.3.1",
+    "eslint": "^7.26.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
     "nodemon": "^2.0.7",
-    "prettier": "^2.2.1",
+    "prettier": "^2.3.0",
     "rimraf": "^3.0.2",
     "ts-node": "^9.1.1",
-    "typescript": "^4.2.3"
+    "typescript": "^4.2.4"
   }
 }
