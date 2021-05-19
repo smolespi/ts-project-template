@@ -21,8 +21,7 @@
   },
   "eslintIgnore": [
     "dist",
-    "node_modules",
-    "rethinkdb_data"
+    "node_modules"
   ],
   "eslintConfig": {
     "extends": "@sysdotini/eslint-config"
