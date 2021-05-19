@@ -21,10 +21,36 @@
   },
   "eslintIgnore": [
     "dist",
-    "node_modules"
+    "node_modules",
+    "rethinkdb_data"
   ],
   "eslintConfig": {
     "extends": "@sysdotini/eslint-config"
+  },
+  "nodemonConfig": {
+    "delay": 5000,
+    "ignore": [
+      ".git",
+      "./node_modules/",
+      "./dist/"
+    ],
+    "watch": [
+      "src"
+    ],
+    "exec": "cross-env NODE_ENV=development ts-node --files ./src/index.ts",
+    "ext": "ts"
+  },
+  "prettier": {
+    "arrowParens": "always",
+    "endOfLine": "lf",
+    "proseWrap": "preserve",
+    "quoteProps": "consistent",
+    "trailingComma": "all",
+    "printWidth": 120,
+    "tabWidth": 2,
+    "semi": true,
+    "singleQuote": false,
+    "useTabs": false
   },
   "scripts": {
     "build": "tsc",
