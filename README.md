@@ -8,7 +8,7 @@ This is meant as quick-and-easy way for me to quickly get started with any TypeS
 
 - I use [pnpm][pnpm] for any projects I have control over.
 
-  - If you use Yarn or NPM, comment the gitignored lockfiles in .gitignore and add pnpm-lock.yml
+  - If you use Yarn or NPM, comment the gitignored lockfiles in .gitignore and add pnpm-lock.yaml
 
 - My configs are _extremely_ strict with the exception of a few annoying errors
 
